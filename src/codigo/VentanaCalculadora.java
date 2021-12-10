@@ -27,7 +27,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        casilla = new javax.swing.JLabel();
+        pantalla = new javax.swing.JLabel();
         BotonDividir = new javax.swing.JButton();
         botonMultiplicar = new javax.swing.JButton();
         BotonMenos = new javax.swing.JButton();
@@ -48,14 +48,14 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        casilla.setBackground(new java.awt.Color(0, 0, 0));
-        casilla.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        casilla.setForeground(new java.awt.Color(51, 255, 0));
-        casilla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        casilla.setToolTipText("");
-        casilla.setBorder(javax.swing.BorderFactory.createCompoundBorder());
-        casilla.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        casilla.setOpaque(true);
+        pantalla.setBackground(new java.awt.Color(0, 0, 0));
+        pantalla.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        pantalla.setForeground(new java.awt.Color(255, 255, 0));
+        pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        pantalla.setToolTipText("");
+        pantalla.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        pantalla.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        pantalla.setOpaque(true);
 
         BotonDividir.setText("/");
 
@@ -178,7 +178,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(casilla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pantalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(BotonBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -190,43 +190,39 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Boton04, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(Boton05, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Boton07, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(Boton08, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Boton00, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Boton09, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Boton06, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotonMas, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(BotonPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Boton00, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(BotonPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Boton01, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(12, 12, 12)
-                                        .addComponent(Boton02, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Boton03, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Boton01, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(Boton02, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                                .addComponent(Boton03, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BotonIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Boton04, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Boton05, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Boton07, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Boton08, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Boton09, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Boton06, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BotonMas, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(casilla, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -265,7 +261,13 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Boton08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton08ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"8");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("8");
+        }
+        else{
+        pantalla.setText(auxiliar + "8");
+        }
     }//GEN-LAST:event_Boton08ActionPerformed
 
     private void botonMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMultiplicarActionPerformed
@@ -277,41 +279,77 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonBorrarActionPerformed
 
     private void Boton05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton05ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"5");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("5");
+        }
+        else{
+        pantalla.setText(auxiliar + "5");
+        }
     }//GEN-LAST:event_Boton05ActionPerformed
 
     private void Boton06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton06ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"6");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("6");
+        }
+        else{
+        pantalla.setText(auxiliar + "6");
+        }
     }//GEN-LAST:event_Boton06ActionPerformed
 
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
-    this.primernumero=Float.parseFloat(this.casilla.getText());
+    this.primernumero=Float.parseFloat(this.pantalla.getText());
         this.operador="+";
-        this.casilla.setText("");
+        this.pantalla.setText("");
     }//GEN-LAST:event_BotonMasActionPerformed
 
     private void Boton01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton01ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"1");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("1");
+        }
+        else{
+        pantalla.setText(auxiliar + "1");
+        }
     }//GEN-LAST:event_Boton01ActionPerformed
 
     private void Boton03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton03ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"3");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("3");
+        }
+        else{
+        pantalla.setText(auxiliar + "3");
+        }
     }//GEN-LAST:event_Boton03ActionPerformed
 
     private void BotonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIgualActionPerformed
-    this.segundonumero=Float.parseFloat(this.casilla.getText());
+    this.segundonumero=Float.parseFloat(this.pantalla.getText());
     }//GEN-LAST:event_BotonIgualActionPerformed
 
     private void Boton00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton00ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"0");
+        this.pantalla.setText(this.pantalla.getText()+"0");
     }//GEN-LAST:event_Boton00ActionPerformed
 
     private void Boton04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton04ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"4");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("4");
+        }
+        else{
+        pantalla.setText(auxiliar + "4");
+        }
     }//GEN-LAST:event_Boton04ActionPerformed
 
     private void Boton02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton02ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"2");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("2");
+        }
+        else{
+        pantalla.setText(auxiliar + "2");
+        }
     }//GEN-LAST:event_Boton02ActionPerformed
 
     private void BotonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPuntoActionPerformed
@@ -323,11 +361,17 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonMenosActionPerformed
 
     private void Boton07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton07ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"7");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")){
+            pantalla.setText("7");
+        }
+        else{
+        pantalla.setText(auxiliar + "7");
+        }
     }//GEN-LAST:event_Boton07ActionPerformed
 
     private void Boton09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton09ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"9");
+        this.pantalla.setText(this.pantalla.getText()+"9");
     }//GEN-LAST:event_Boton09ActionPerformed
 
     /**
@@ -383,6 +427,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton BotonMenos;
     private javax.swing.JButton BotonPunto;
     private javax.swing.JButton botonMultiplicar;
-    private javax.swing.JLabel casilla;
+    private javax.swing.JLabel pantalla;
     // End of variables declaration//GEN-END:variables
 }
